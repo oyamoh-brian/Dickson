@@ -17,6 +17,15 @@
   padding-top: 50px;
   z-index: 1;
 }
+#quote{
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: auto;
+  position: absolute;
+  left: 50%;
+  top: 110vh;
+  color: grey;
+  font-size: 25px;
+}
 .navbar:hover{
   background-color: grey;
 }
@@ -52,4 +61,7 @@
   width: 100%;
   background-color: #010819;
   border-radius: 0px 0px 0px 1000px;
+}
+.content1 > svg{
+  align-self: flex-end;
 }
