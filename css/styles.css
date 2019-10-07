@@ -65,3 +65,6 @@
 .content1 > svg{
   align-self: flex-end;
 }
+.imagePost{
+  width: 300px; 
+}
