@@ -3,68 +3,381 @@
   padding: 0;
   box-sizing: border-box;
 }
-#top{
-  background-color: #010819;
-  height: 100vh;
+body{
+  background-color: rgba(1,8,25,0.8);
+  z-index: -1;
 }
-#first{
-  margin-left: auto;
+@media only screen and (min-width:600px){
+  svg{
+    height: 507px;
+    width: 511px;
+  }
+    #top{
+      background-color: #010819;
+      height: 100vh;
+    }
+    #first{
+      margin-left: auto;
+    }
+    #image{
+      position: absolute;
+      height: 100vh;
+      align-self: center;
+      padding-top: 50px;
+      z-index: 1;
+    }
+    #quote{
+      font-family: 'Luckiest Guy', cursive;
+      margin-left: auto;
+      position: absolute;
+      left: 50%;
+      top: 110vh;
+      color: grey;
+      font-size: 25px;
+    }
+    #projects{
+      margin-top: 70px;
+    }
+
+    .show{
+      height: 500px;
+    }
+    .navbar:hover{
+      background-color: grey;
+    }
+    .nav{
+      box-shadow: 1px 1px 2px #A8A7A7;
+      position: fixed;
+      width: 100%;
+      z-index: 3;
+    }
+    .overlay{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      color:white;
+    }
+    .big{
+      font-family: 'Saira Stencil One', cursive;
+      font-size: 70px;
+    }
+    .over{
+      position: absolute;
+      top: 50;
+      left: 0;
+      width: 100%;
+      height: 90vh;
+      z-index: 2;
+      color:white;
+      background-color: rgba(1,8,25,0.5);
+    }
+    .content1{
+      height: 600px;
+      width: 100%;
+      background-color: #010819;
+      border-radius: 0px 0px 0px 1000px;
+    }
+    .content1 > svg{
+      align-self: flex-end;
+    }
+    .imagePost{
+      width: 700px;
+      position: absolute;
+      right: 0;
+      padding-top: 10px;
+    }
+    .text{
+      position: absolute;
+      left: 0;
+      font-family:sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      color: #010819;
+      display: none;
+    }
+    .content2{
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    /* .content3{
+      margin-top: 600px;
+      position: absolute;
+    } */
+    .card{
+      width: 150px;
+      height: 150px;
+      margin-left: 9px;
+      box-shadow: 1px 1px 4px #000000;
+      /* background-image: url("../img/onlinegym.png"); */
+      background-color: #010819;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
+      border-radius: 1200px;
+      border: 5px blue;
+      transform: scale(.9);
+      transition: 1.5s ease;
+    }
+    .card1{
+      width: 200px;
+      height: 200px;
+      margin-left: 9px;
+      margin-top: 80px;
+      /* background-image: url("../img/mshauri.png"); */
+      background-color: #010819;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 1px 1px 4px #000000;
+      border-radius: 1200px;
+      border: 5px blue;
+      transform: scale(.9);
+      transition: 2.8s ease;
+    }
+    .card2{
+      width: 300px;
+      height: 300px;
+      margin-left: 9px;
+      margin-top: 50px;
+      /* background-image: url("../img/mpesa.png"); */
+      background-color: #010819;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 1px 1px 4px #000000;
+      border-radius: 1200px;
+      border: 5px blue;
+      transform: scale(.9);
+      transition: 3.8s ease;
+    }
+    .card1:hover{
+      border-radius: 0;
+      height: auto;
+      transform: scale(1.3);
+      transition: 1.8s ease;
+      background-image: url("../img/mpesa.png");
+      z-index: 2;
+    }
+    .card:hover{
+      border-radius: 0;
+      height: auto;
+      transform: scale(1.3);
+      transition: 1.8s ease;
+      z-index: 2;
+      background-image: url("../img/onlinegym.png");
+    }
+    .card2:hover{
+      border-radius: 0;
+      height: auto;
+      transform: scale(1.3);
+      transition: 1.8s ease;
+      background-image: url("../img/mshauri.png");
+      z-index: 2;
+    }
+    .fit{
+      height: 100%;
+      width: 100%;
+    }
+    .webdev{
+      width: 400px;
+      /* position: absolute;
+      right: 0; */
+      top: 100%;
+    }
 }
-#image{
-  position: absolute;
-  height: 100vh;
-  align-self: center;
-  padding-top: 50px;
-  z-index: 1;
-}
-#quote{
-  font-family: 'Luckiest Guy', cursive;
-  margin-left: auto;
-  position: absolute;
-  left: 50%;
-  top: 110vh;
-  color: grey;
-  font-size: 25px;
-}
-.navbar:hover{
-  background-color: grey;
-}
-.nav{
-  box-shadow: 1px 1px 2px #A8A7A7;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-.overlay{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  color:white;
-}
-.big{
-  font-family: 'Saira Stencil One', cursive;
-  font-size: 70px;
-}
-.over{
-  position: absolute;
-  top: 50;
-  left: 0;
-  width: 100%;
-  height: 90vh;
-  z-index: 2;
-  color:white;
-  background-color: rgba(1,8,25,0.5);
-}
-.content1{
-  height: 600px;
-  width: 100%;
-  background-color: #010819;
-  border-radius: 0px 0px 0px 1000px;
-}
-.content1 > svg{
-  align-self: flex-end;
-}
-.imagePost{
-  width: 300px; 
+
+/*smaller than 500*/
+@media only screen and (max-width:500px){
+    svg{
+      height: 300px;
+      width: 200px;
+    }
+    #top{
+      background-color: #010819;
+      height: 60vh;
+      width: 100%;
+    }
+    #hamburger{
+      z-index: 4;
+    }
+    #first{
+      margin-left: auto;
+    }
+    #image{
+      position: absolute;
+      height: 100vh;
+      align-self: center;
+      padding-top: 50px;
+      z-index: 1;
+    }
+    #quote{
+      font-family: 'Luckiest Guy', cursive;
+      margin-left: auto;
+      position: absolute;
+      left: 50%;
+      top: 80vh;
+      color: grey;
+      font-size: 20px;
+    }
+    #projects{
+      margin-top: 70px;
+    }
+
+    .show{
+      width:80%;
+      align-self: center;
+    }
+    .navbar:hover{
+      background-color: grey;
+    }
+    .navbar{
+      display: none;
+    }
+    .nav{
+      box-shadow: 1px 1px 2px #A8A7A7;
+      position: fixed;
+      width: 100%;
+      height: 35px; 
+      z-index: 3;
+    }
+    .overlay{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      margin-top: 30px;
+      transform: translate(-50%,-50%);
+      color:white;
+    }
+    .big{
+      font-family: 'Saira Stencil One', cursive;
+      font-size: 30px;
+    }
+    .over{
+      position: absolute;
+      top: 50;
+      left: 0;
+      width: 100%;
+      height: 64vh;
+      z-index: 2;
+      color:white;
+      background-color: rgba(1,8,25,0.5);
+    }
+    .content1{
+      height: 500px;
+      width: 100%;
+      background-color: #010819;
+      border-radius: 0px 0px 0px 1000px;
+    }
+    .content1 > svg{
+      align-self: flex-end;
+    }
+    .imagePost{
+      width: 300px;
+      position: absolute;
+      right: 0;
+      opacity: .6;
+      padding-top: 10px;
+    }
+    .text{
+      position: absolute;
+      left: 0;
+      font-family:sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      color: #010819;
+      display: none;
+    }
+    .content2{
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    /* .content3{
+      margin-top: 600px;
+      position: absolute;
+    } */
+    .card{
+      width: 90px;
+      height: 90px;
+      margin-left: 9px;
+      box-shadow: 1px 1px 4px #000000;
+      /* background-image: url("../img/onlinegym.png"); */
+      background-color: #010819;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
+      border-radius: 1200px;
+      border: 5px blue;
+      transform: scale(.9);
+      transition: 1.5s ease;
+    }
+    .card1{
+      width: 90px;
+      height: 90px;
+      margin-left: 9px;
+      margin-top: 30px;
+      /* background-image: url("../img/mshauri.png"); */
+      background-color: #010819;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 1px 1px 4px #000000;
+      border-radius: 1200px;
+      border: 5px blue;
+      transform: scale(.9);
+      transition: 2.8s ease;
+    }
+    .card2{
+      width: 90px;
+      height: 90px;
+      margin-left: 9px;
+      margin-top: 20px;
+      /* background-image: url("../img/mpesa.png"); */
+      background-color: #010819;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 1px 1px 4px #000000;
+      border-radius: 1200px;
+      border: 5px blue;
+      transform: scale(.9);
+      transition: 3.8s ease;
+    }
+    .card1:hover{
+      border-radius: 0;
+      height: auto;
+      transform: scale(1.3);
+      transition: 1.8s ease;
+      background-image: url("../img/mpesa.png");
+      z-index: 2;
+    }
+    .card:hover{
+      border-radius: 0;
+      height: auto;
+      transform: scale(1.3);
+      transition: 1.8s ease;
+      z-index: 2;
+      background-image: url("../img/onlinegym.png");
+    }
+    .card2:hover{
+      border-radius: 0;
+      height: auto;
+      transform: scale(1.3);
+      transition: 1.8s ease;
+      background-image: url("../img/mshauri.png");
+      z-index: 2;
+    }
+    .fit{
+      height: 100%;
+      width: 100%;
+    }
+    .webdev{
+      width: 400px;
+      /* position: absolute;
+      right: 0; */
+      top: 100%;
+    }
 }
