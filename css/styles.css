@@ -217,7 +217,7 @@ body{
       margin-left: auto;
       position: absolute;
       left: 50%;
-      top: 80vh;
+      top: 15vh;
       color: grey;
       font-size: 20px;
     }
@@ -272,6 +272,8 @@ body{
       height: 500px;
       width: 100%;
       margin-top: 0;
+      position: absolute;
+      top: 50%;
       background-color: #010819;
       border-radius: 0px 0px 0px 1000px;
     }
@@ -296,6 +298,7 @@ body{
     }
     .content2{
       position: absolute;
+      top: 800px;
       left: 0;
       right: 0;
     }
