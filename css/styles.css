@@ -257,10 +257,10 @@ body{
     }
     .over{
       position: absolute;
-      top: 50;
+      top: 0;
       left: 0;
       width: 100%;
-      height: 60vh;
+      height: 400px;
       z-index: 2;
       color:white;
       background-color: rgba(1,8,25,0.5);
@@ -273,7 +273,7 @@ body{
       width: 100%;
       margin-top: 0;
       position: absolute;
-      top: 50%;
+      top: 40%;
       background-color: #010819;
       border-radius: 0px 0px 0px 1000px;
     }
